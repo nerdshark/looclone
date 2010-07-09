@@ -54,7 +54,7 @@ class MainMenuState < Chingu::GameState
          },
          :return => Proc.new {
             if @menu_selection == 0
-               switch_game_state( Level.new )
+               switch_game_state( LevelState.new )
             elsif @menu_selection == 1
             elsif @menu_selection == 2
                exit
