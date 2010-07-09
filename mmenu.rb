@@ -63,10 +63,6 @@ class MainMenuState < Chingu::GameState
       }
    end
 
-   def update
-      
-   end
-
    def draw
       @menu_items.each { |x| x.draw }
    end
