@@ -12,7 +12,7 @@ require 'states'
 class IntroState < Chingu::GameState
    def initialize
       super
-      self.input = { :esc => Proc.new { switch_game_state( MainMenuState.new ) } }
+      self.input = { :esc => MainMenuState }
       $window.caption = "LooClone Intro"
       @mytext = Chingu::Text.create("Press esc to continue", :x => 512, :y => 300)
    end
